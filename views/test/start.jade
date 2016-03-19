@@ -1,0 +1,77 @@
+extends ../layout
+
+block content
+  script(src="/js/test/jquery-1.12.2.min.js")
+  script(src="/js/test/main.js")
+  script(src="/js/test/chart-options.js")
+  script(src="/js/test/bartype.js")
+  script(src="/js/test/Chart.min.js")
+  script(src="/js/test/jscolor.js")
+  script(src="/js/test/linetype.js")
+  script(src="/js/test/pietype.js")
+  script(src="/js/test/radartype.js")
+
+  .page-header
+    h3 Contact Form
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      label(class='col-sm-2 control-label', for='question') Question
+      .col-sm-8
+        div(name='question', id='question', autofocus=true, cols="100", rows="5")
+    .form-group
+      label(class='col-sm-2 control-label', for='expectedcharttype') Chart Type
+      .col-sm-8
+        input(type='radio', id='line' name='type' value='1' onclick="lineTypeSelected()")
+        | Line Graph
+        input(type='radio', id='line' name='type' value='2' onclick="barTypeSelected()")
+        | Bar Graph
+        input(type='radio', id='line' name='type' value='3' onclick="radarTypeSelected()")
+        | Radar Graph
+        input(type='radio', id='line' name='type' value='4' onclick="pieTypeSelected()")
+        | Pie Chart
+    .form-group
+      label(class='col-sm-2 control-label', for='expectedcharttype') Chart Type
+      .col-sm-8        
+        label 
+          p
+            Enter Your Data Labels in comma separated manner
+        input(type="text" id="datalabels")
+    .form-group
+      label(class='col-sm-2 control-label', for='expectedcharttype') Chart Type
+      .col-sm-8        
+        table(id="linearDataEntry" style="display:none")
+          tr
+            td
+              label Enter Your Data Points in comma separated manner
+          tr
+            td
+              ul(id="datapoints")
+          tr
+            td
+              input(type="button" onclick="addDataPoint()" value="Add Data Sets")
+        table(id="pieDataEntry" style="display:none")
+          tr
+            td
+              label Choose colors for your labels
+          tr
+            td
+              ul(id="colorPicker")
+            td
+              input(type="button" onclick="showColorPick()" value="Pick Color")  
+          tr
+            td
+              label Enter the data points
+            td
+              input(type="text" id="piedatapoints")
+        input(id="createchart" type="button" value="Draw Graph")
+        canvas(id="myChart" width="400" height="400")             
+    .form-group
+      .col-sm-offset-2.col-sm-8
+         img(src= "/img/next-arrow-md.png", height="50px", width="50px", onclick="displayNext()")
+    .form-group
+      .col-sm-offset-2.col-sm-8
+        button.btn.btn-primary(type='submit')
+          | Submit
+

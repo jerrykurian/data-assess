@@ -1,0 +1,12 @@
+extends ../layout
+Questions
+div
+  table
+    thead
+      tr: th Questions
+    tbody
+      each question, i in questions
+        tr
+          td 
+            #{question.question}
+

@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  div
+    table
+      thead
+        tr: th Questions
+      tbody
+        each question in questions
+          tr
+            td 
+              label Question - #{question.question}
+

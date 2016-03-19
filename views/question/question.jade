@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+  .page-header
+    h3 Contact Form
+
+  form.form-horizontal(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      label(class='col-sm-2 control-label', for='question') Question
+      .col-sm-8
+        textarea(name='question', id='question', autofocus=true, cols="100", rows="5")
+    .form-group
+      label(class='col-sm-2 control-label', for='expectedlabels') Expected Data Labels (Enter as comma seperated values. Eg. Jan,Feb,Mar)
+      .col-sm-8
+        input.form-control(type='text', name='expectedlabels', id='expectedlabels')
+    .form-group
+      label(class='col-sm-2 control-label', for='expecteddataset') Expected Data Sets (Enter as set of comma seperated value enclosed by []. Eg [1,2],[3,4])
+      .col-sm-8
+        input.form-control(type='text', name='expecteddataset', id='expecteddataset')
+    .form-group
+      label(class='col-sm-2 control-label', for='chartoptions') Chart options to be displayed 
+      .col-sm-8
+        label Line Graph, Bar Graph, Radar Graph, Pie Chart
+    .form-group
+      label(class='col-sm-2 control-label', for='expectedcharttype') Expected Chart Type
+      .col-sm-8
+        select(name='expectedcharttype', id='expectedcharttype')
+          option(value='1') Line Graph
+          option(value='2') Bar Graph
+          option(value='3') Radar Graph
+          option(value='4') Pie Chart
+    .form-group
+      .col-sm-offset-2.col-sm-8
+        button.btn.btn-primary(type='submit')
+          | Create
