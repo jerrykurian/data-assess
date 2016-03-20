@@ -1,82 +1,4 @@
-![](https://lh4.googleusercontent.com/-PVw-ZUM9vV8/UuWeH51os0I/AAAAAAAAD6M/0Ikg7viJftQ/w1286-h566-no/hackathon-starter-logo.jpg)
-Hackathon Starter [![Dependency Status](https://david-dm.org/sahat/hackathon-starter/status.svg?style=flat)](https://david-dm.org/sahat/hackathon-starter) [![Build Status](https://travis-ci.org/sahat/hackathon-starter.svg?branch=master)](https://travis-ci.org/sahat/hackathon-starter)
-=======================
-
-[![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://paypal.me/sahat) [![Join the chat at https://gitter.im/sahat/hackathon-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sahat/hackathon-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Thinkful Pair on Node](https://tf-assets-staging.s3.amazonaws.com/badges/thinkful_repo_badge.svg)](http://start.thinkful.com/node/)
-
-**Live Demo**: http://hackathonstarter.herokuapp.com
-
-Jump to [What's new in 3.5.0?](#changelog)
-
-A boilerplate for **Node.js** web applications.
-
-If you have attended any hackathons in the past, then you know how much time it takes to
-get a project started: decide on what to build, pick a programming language, pick a web framework,
-pick a CSS framework. A while later, you might have an initial project up on GitHub and only then
-can other team members start contributing. Or how about doing something as simple as *Sign in with Facebook*
-authentication? You can spend hours on it if you are not familiar with how OAuth 2.0 works.
-
-When I started this project, my primary focus was on **simplicity** and **ease of use**.
-I also tried to make it as **generic** and **reusable** as possible to cover most use cases of hackathon web apps,
-without being too specific. In the worst case you can use this as a learning guide for your projects,
-if for example you are only interested in **Sign in with Google** authentication and nothing else.
-
-<h4 align="center">Modern Theme</h4>
-
-![](https://lh6.googleusercontent.com/-KQTmCFNK6MM/U7OZpznjDuI/AAAAAAAAERc/h3jR27Uy1lE/w1366-h1006-no/Screenshot+2014-07-02+01.32.22.png)
-
-<h4 align="center">Flatly Bootstrap Theme</h4>
-
-![](https://lh5.googleusercontent.com/-oJ-7bSYisRY/U1a-WhK_LoI/AAAAAAAAECM/a04fVYgefzw/w1474-h1098-no/Screen+Shot+2014-04-22+at+3.08.33+PM.png)
-
-<h4 align="center">API Examples</h4>
-
-![](https://lh5.googleusercontent.com/-BJD2wK8CvC8/VLodBsyL-NI/AAAAAAAAEx0/SafE6o_qq_I/w1818-h1186-no/Screenshot%2B2015-01-17%2B00.25.49.png)
-
-Table of Contents
------------------
-
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Obtaining API Keys](#obtaining-api-keys)
-- [Project Structure](#project-structure)
-- [List of Packages](#list-of-packages)
-- [Useful Tools and Resources](#useful-tools-and-resources)
-- [Recommended Design Resources](#recommended-design-resources)
-- [Recommended Node.js Libraries](#recommended-nodejs-libraries)
-- [Recommended Client-side Libraries](#recommended-client-side-libraries)
-- [Pro Tips](#pro-tips)
-- [FAQ](#faq)
-- [How It Works](#how-it-works-mini-guides)
-- [Mongoose Cheatsheet](#mongoose-cheatsheet)
-- [Deployment](#deployment)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
-- [License](#license)
-
-Features
---------
-
-- **Local Authentication** using Email and Password
-- **OAuth 1.0a Authentication** via Twitter
-- **OAuth 2.0 Authentication** via Facebook, Google, GitHub, LinkedIn, Instagram
-- Flash notifications
-- MVC Project Structure
-- Node.js clusters support
-- Sass stylesheets (auto-compiled via middleware)
-- Bootstrap 3 + Extra Themes
-- Contact Form (powered by Mailgun, Sendgrid or Mandrill)
-- **Account Management**
- - Gravatar
- - Profile Details
- - Change Password
- - Forgot Password
- - Reset Password
- - Link multiple OAuth strategies to one account
- - Delete Account
-- CSRF protection
-- **API Examples**: Facebook, Foursquare, Last.fm, Tumblr, Twitter, Stripe, LinkedIn and more.
+Based on the hackathon-starter template as can be seen at http://hackathonstarter.herokuapp.com
 
 Prerequisites
 -------------
@@ -102,7 +24,7 @@ The easiest way to get started is to clone the repository:
 
 ```bash
 # Get the latest snapshot
-git clone --depth=1 https://github.com/sahat/hackathon-starter.git myproject
+git clone --depth=1 https://github.com/jerrykurian/data-assess.git myproject
 
 # Change directory
 cd myproject

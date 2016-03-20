@@ -12,7 +12,7 @@ block content
   script(src="/js/test/radartype.js")
 
   .page-header
-    h3 Contact Form
+    h3 Test Questions
 
   form.form-horizontal(method='POST')
     input(type='hidden', name='_csrf', value=_csrf)
@@ -32,14 +32,14 @@ block content
         input(type='radio', id='line' name='type' value='4' onclick="pieTypeSelected()")
         | Pie Chart
     .form-group
-      label(class='col-sm-2 control-label', for='expectedcharttype') Chart Type
+      label(class='col-sm-2 control-label', for='expectedcharttype') Data Labels
       .col-sm-8        
         label 
           p
             Enter Your Data Labels in comma separated manner
         input(type="text" id="datalabels")
     .form-group
-      label(class='col-sm-2 control-label', for='expectedcharttype') Chart Type
+      label(class='col-sm-2 control-label', for='expectedcharttype') Data Points
       .col-sm-8        
         table(id="linearDataEntry" style="display:none")
           tr
